@@ -1,0 +1,82 @@
+head{
+	font: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color: #D8D8D8;
+}
+
+body{
+	background-color: #0F0F0F;
+	color: #D8D8D8; 
+}
+
+
+.center{
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+	display: flex;
+}
+
+.img-center{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 50%;
+}
+
+.quarter-img{
+	width: 25%;
+	height: 25%;
+}
+
+.small-img{
+	width: 100px;
+	height: 100px;
+}
+
+.med-img{
+	width: 300px;
+	height: 300px;
+}
+
+.fade-in{
+	-moz-animation: fadein 3.5s; 
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.hidden{
+	visibility: hidden;
+}
+
+.visible{
+	visibility: visible;
+}
+
+.strip{
+	display: table;
+	width: 100%;
+	table-layout: auto;
+	background-color: #0F0F0F;
+}
+
+.box{
+	display: table-cell;
+	background-color: #4F4F4F;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.button{
+	background-color: #0F0F0F;
+	color: #AA0000;
+	border: 0px;
+	border-radius: 10px;
+}
+
+.button:hover{
+	color: #FF2E2E;
+	/*background-color: #FF2E2E;*/
+}

@@ -1,0 +1,133 @@
+.App{
+  display: grid;
+  grid-template-columns: 1fr 1fr 5fr 1fr 1fr;
+  grid-template-rows: 100px 800px 100px;
+  grid-template-areas: "header header header header header"
+                       "content content content content content"
+                       "footer footer footer footer footer";
+  color: #f0f0f0;
+}
+
+
+ul li{
+  margin-bottom: 30px;
+  font-size: 20px;
+  list-style: none;
+}
+
+ul a:link{
+  color : inherit;
+}
+
+ul a:visited{
+  color: inherit;
+}
+
+.header{
+  background-color: #0c0c0c;
+  grid-area: header;
+}
+
+.content{
+  background-color: #2e2e2e;
+  grid-area: content;
+  justify-content: center;
+}
+
+.content h1, .content h2{
+  text-align: center;
+}
+
+.mainstuff{
+  display : grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 70px 300px;
+  grid-template-areas: ". greeting ."
+                       ". . ."
+                       "skillA skillB skillC";
+}
+
+.greeting{
+  grid-area: greeting;
+  align-self: center;
+  text-align: center;
+}
+
+.skill{
+  width : 85%;
+  height : 85%;
+  align-self: center;
+  justify-self: center;
+  box-shadow: 5px 5px 20px black;
+  border-radius: 10px;
+}
+
+#projects{
+  grid-area: skillA;
+  background-color: darkgray;
+}
+
+#resume{
+  grid-area : skillB;
+  background-color: darkgray;
+}
+
+#webapps{
+  grid-area: skillC;
+  background-color: darkgray;
+}
+
+.footer{
+  background-color: rgb(31, 31, 31);
+  grid-area: footer;
+}
+
+.subgrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px;
+  grid-template-areas: "Top Bottom Links";
+}
+
+#logo-img{
+  width : auto;
+  height : 20%;
+  padding: 5px 5px 5px 10px;
+  justify-self: center;
+}
+
+.Top{
+  grid-area: Top;
+  justify-content: center;
+}
+
+.Bottom{
+  grid-area: Bottom;
+}
+
+.Bottom span{
+  background-color: white;
+  height : 5px;
+  width : 10px;
+  
+
+}
+
+@media (min-width : 900px){
+  .App{
+    grid-template-rows: 200px 700px 100px;
+    grid-template-areas: "header content content content content"
+                         "header content content content content" 
+                         "header footer footer footer footer";
+  }
+  .subgrid{
+    grid-template-columns: auto;
+    grid-template-rows : 1fr 1fr 1fr;
+    grid-template-areas: "Top" "Bottom" "Links";
+  }
+
+  #logo-img{
+    width : 85%;
+    height: auto;
+  }
+}

@@ -1,0 +1,50 @@
+.content{
+    background-color: #2e2e2e;
+    grid-area: content;
+    justify-content: center;
+}
+  
+.content h1, .content h2{
+    text-align: center;
+    padding: 0px 5px 0px 5px;
+}
+
+.mainstuff{
+    display : grid;
+    grid-template-columns: minmax(360px, 100%);
+    grid-template-rows: 300px 300px 300px 300px;
+    
+    grid-template-areas: "greeting"
+                         "main-content"
+                         "main-content"
+                         "main-content";
+  
+}
+
+.greeting{
+    grid-area: greeting;
+    align-self: center;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+}
+  
+
+.main-content{
+    grid-area: main-content;
+}
+
+@media (min-width : 1200px){
+    .mainstuff{
+        display : block;
+        grid-template-columns: 100%;
+        grid-template-rows: 300px 300px;
+        grid-template-areas: "greeting"
+                             "main-content"
+                             "main-content";
+    }
+
+    .greeting{
+        margin-top : 50px;
+    }
+    
+}

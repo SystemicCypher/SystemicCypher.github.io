@@ -30,36 +30,6 @@ ul a:visited{
   grid-area: header;
 }
 
-.content{
-  background-color: #2e2e2e;
-  grid-area: content;
-  justify-content: center;
-}
-
-.content h1, .content h2{
-  text-align: center;
-  padding: 0px 5px 0px 5px;
-}
-
-.mainstuff{
-  display : grid;
-  grid-template-columns: minmax(360px, 100%);
-  grid-template-rows: 300px 300px 300px 300px;
-  
-  grid-template-areas: "greeting"
-                       "main-content"
-                       "main-content"
-                       "main-content";
-
-}
-
-.greeting{
-  grid-area: greeting;
-  align-self: center;
-  text-align: center;
-  padding: 0px 10px 0px 10px;
-}
-
 .skill{
   width : auto;
   height : 85%;
@@ -91,10 +61,11 @@ ul a:visited{
 }
 
 .subgrid{
+  grid-area: header;
   display: grid;
   grid-template-columns: minmax(110px, 1fr) 100px;
   grid-template-rows: 100px;
-  
+  background-color: #0c0c0c;
   grid-template-areas: "Top Links";
 }
 
@@ -162,11 +133,10 @@ input:checked ~ span.ham:nth-last-child(2){
 
 .Bottom{
   grid-area: Links;
+
 }
 
-.main-content{
-  grid-area: main-content;
-}
+
 
 @media (min-width : 1200px){
   .main-structure{
@@ -177,32 +147,21 @@ input:checked ~ span.ham:nth-last-child(2){
                          "header content content content content";
   }
   .subgrid{
+    grid-area: header;
     grid-template-columns: auto;
     grid-template-rows : 1fr 1fr 1fr;
-    grid-template-areas: "Top" "Bottom" "Links";
+    grid-template-areas: "Top" "Links" ".";
   }
 
   .Bottom{
-    display: grid;
+    grid-area: Links;
   }
 
   #logo-img{
     width : 85%;
     height: auto;
   }
-
-  .greeting{
-    margin-top : 50px;
-  }
-
-  .mainstuff{
-    display : block;
-    grid-template-columns: 100%;
-    grid-template-rows: 300px 300px;
-    grid-template-areas: "greeting"
-                         "main-content"
-                         "main-content";
-  }
+  
 
   ul li{
     display: block;

@@ -1,0 +1,5 @@
+.resume-content{
+    background-color: #2e2e2e;
+    display: grid;
+    grid-area: content;
+}

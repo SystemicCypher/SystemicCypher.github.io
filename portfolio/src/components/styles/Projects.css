@@ -1,0 +1,18 @@
+.contents{
+    background-color: #2e2e2e;
+    display: grid;
+    grid-area: content;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    grid-template-areas: "r1 r2 r3";
+}
+
+#molecules, #peercoin, #scheduler-app{
+    justify-self: center;
+    align-self: center;
+    background-color : #535252;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px black;
+    cursor: pointer;
+}

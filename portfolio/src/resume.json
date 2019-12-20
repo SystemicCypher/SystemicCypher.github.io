@@ -1,0 +1,77 @@
+{
+    "name" : "Austin Loza",
+    "phone" : "(714) - 760 - 3916",
+    "email" : "austinloza24@gmail.com",
+    "github" : "github.com/systemiccypher",
+    "skills" : {
+        "programming" : [
+            "C++",
+            "Python",
+            "Java",
+            "JavaScript",
+            "Assembly"
+        ],
+        "tools" : [
+            "Git",
+            "Visual Studio",
+            "Unix",
+            "Adobe Suite",
+            "TensorFlow",
+            "PyTorch",
+            "React",
+            "NodeJS"
+        ],
+        "langs" : [
+            "English",
+            "Spanish"
+        ]
+    },
+    "projects" : [
+        {
+            "name" : "PeerCoin",
+            "uses" : [
+                "C++",
+                "Python"
+            ],
+            "desc" : "A blockchain based P2P filesharing project that limits downloads to coins one earns by sharing files"
+        }, 
+        {
+            "name" : "Molecule Graph Fingerprinter",
+            "uses" : [
+                "Python",
+                "TensorFlow",
+                "Keras"
+            ],
+            "desc" : "Takes molecular data (bond distance, atoms, type of bond) and uses this node and edge data to predict molecular properties (solubility, flammability, etc.)"
+        }
+    ],
+    "experience" : [
+
+    ],
+    "education" : [
+        {
+            "school" : "California State University, Fullerton",
+            "location" : "Fullerton, CA",
+            "degree" : "Master of Science",
+            "major" : "Computer Science",
+            "start-year" : "2018",
+            "end-year" : "Present",
+            "notes" : [
+                "Currently in final semester pending completion of thesis"
+            ]
+        },
+        {
+            "school" : "University of California, Santa Barbara",
+            "location" : "Santa Barbara, CA",
+            "degree" : "Bachelor of Science",
+            "major" :"Computer Science",
+            "start-year" : "2015",
+            "end-year" : "2018",
+            "notes" : [
+                "Dean's honors 2 quarters",
+                "Graduated a year early"
+            ]
+
+        }
+    ]
+}

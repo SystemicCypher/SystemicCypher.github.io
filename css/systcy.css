@@ -1,19 +1,60 @@
 head{
-	font: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font: "Helvetica Neue", "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 	color: #D8D8D8;
 }
 
 body{
-	background-color: #0F0F0F;
+	background-color: #171717;
 	color: #D8D8D8; 
+	font-family: 'Open Sans', sans-serif;
+	margin: 0px;
+	padding: 0px;
 }
 
+.fillscreen{
+	height: 100vh;
+}
+
+.titular{
+	display : inline-flex;
+	font-size: 10vw;
+	margin-left : 2vw;
+	position: relative;
+}
+
+.main-content{
+	background-color: aliceblue;
+	display : grid;
+	grid-template-areas: ". greet ."
+						 "proj proj proj"
+						 "proj proj proj";
+	row-gap: 30px;
+	grid-template-rows : repeat(1fr, 3);
+	grid-template-columns: auto 2fr;
+}
 
 .center{
 	align-content: center;
 	justify-content: center;
 	text-align: center;
 	display: flex;
+}
+
+.greeting{
+	margin-left: 25vw;
+	width: 28vw;
+	text-align: center;
+	display: inline-flex;
+}
+
+.textual{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2vw;
+	position: relative;
+}
+
+.project{
+	grid-area : proj;
 }
 
 .img-center{
@@ -43,8 +84,8 @@ body{
 }
 
 @-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .hidden{
